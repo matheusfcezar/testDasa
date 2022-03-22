@@ -1,0 +1,23 @@
+{
+  "name": "cypress-dasa",
+  "version": "1.0.0",
+  "description": "Automation Challenge - DASA",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "cy:open": "cypress open"
+  },
+  "author": "Matheus Cezar",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^9.5.2",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "step_definitions": "cypress/integration/steps/**/"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0"
+  }
+}
